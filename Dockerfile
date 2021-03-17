@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-
+ENV TZ=Europe/Berlin
 RUN apt update && \
  apt install -y wget gcc make cmake g++ git \
 	pkg-config valgrind libboost-all-dev language-pack-en-base libboost-python-dev python3-dev \
