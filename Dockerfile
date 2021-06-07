@@ -10,7 +10,8 @@ RUN apt update && \
 	pkg-config valgrind libboost-all-dev language-pack-en-base libboost-python-dev python3-dev python3-pip \
 	clang-tidy clang  \
 	libeigen3-dev libsdl2-dev libglew-dev \
-	libsuperlu-dev libopenblas-dev
+	libsuperlu-dev libopenblas-dev \
+	qt5-default libqt5charts5-dev
 RUN apt update && \
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
     apt-get -y install git-lfs && \
