@@ -17,6 +17,6 @@ RUN apt update && \
     apt-get -y install git-lfs && \
     git lfs install
 
-RUN pip3 install conan
+RUN pip3 install conan==1.40.3
 
 ENV LANG en_US.utf-8
